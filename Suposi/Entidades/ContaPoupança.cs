@@ -19,5 +19,10 @@ namespace Suposi.Entidades
         {
             Saldo = Saldo * TaxaJuros;
         }
+        public sealed override void Saque(double quantia)
+        {
+            base.Saque(quantia);
+            Saldo = Saldo - 2.0;        
+        }
     }
 }

@@ -16,9 +16,9 @@
             Titular = titular;
             Saldo = saldo;
         }
-        public void Saque (double quantia)
+        public virtual void Saque (double quantia)
         {
-            Saldo = Saldo - quantia;
+            Saldo = Saldo - quantia - 5;
         }
         public void Deposito (double quantia)
         {
