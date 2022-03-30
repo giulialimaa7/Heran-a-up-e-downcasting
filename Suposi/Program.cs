@@ -25,7 +25,17 @@ namespace Suposi
 
             if (c3 is ContaComercial)
             {
-                cc5 (ContaComercial) = 
+                ContaComercial c5 = (ContaComercial)c3;
+                // ContaComercial c5 = c3 as ContaComercial //
+                c5.Empréstimo(200.0);
+                Console.WriteLine("Emprestimo! ");
+            }
+            if (c3 is ContaPoupança)
+            {
+                ContaPoupança c5 = (ContaPoupança)c3;
+                // ContaPoupança c5 = c3 as ContaPoupança //
+                c5.AtualizarConta();
+                Console.WriteLine("Atualizou! ");
             }
         }
     }
